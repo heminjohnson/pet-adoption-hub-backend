@@ -3,6 +3,9 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class AppService {
   getHealth() {
-    return { message: 'Health OK', version: process.env.npm_package_version };
+    const message = 'Health OK';
+    const version = '0.0.1';
+
+    return { message, version };
   }
 }
