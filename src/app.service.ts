@@ -4,7 +4,7 @@ import { Injectable } from '@nestjs/common';
 export class AppService {
   getHealth() {
     const message = 'Health OK';
-    const version = '0.0.1';
+    const version = '0.0.2';
 
     return { message, version };
   }
